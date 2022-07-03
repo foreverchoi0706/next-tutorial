@@ -1,4 +1,4 @@
-declare global {
+export declare global {
   interface IConfig {
     credential: {
       privateKey: string;
