@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Heading, Box, Flex, Center } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 import Layout from "components/Layout";
 import GoogleLoginButton from "components/GoogleLoginButton";
 

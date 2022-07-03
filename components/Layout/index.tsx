@@ -1,11 +1,11 @@
-import { FC, PropsWithChildren, memo } from "react";
+import { FC, memo, PropsWithChildren } from "react";
 import Head from "next/head";
 
 interface IProps {
   title: string;
 }
 
-const Layout: FC<PropsWithChildren<IProps>> = function ({ title, children }) {
+const Layout: FC<PropsWithChildren<IProps>> = ({ title, children }) => {
   return (
     <div>
       <Head>
