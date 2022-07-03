@@ -1,7 +1,15 @@
-import { FC, memo } from "react";
+import { FC, memo, useCallback } from "react";
 import { Button, ButtonProps } from "@chakra-ui/react";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import FirebaseClient from "@/models/firebase_client";
 
-const GoogleLoginButton: FC<ButtonProps> = (props) => {
+const provider = new GoogleAuthProvider();
+
+const GoogleLoginButton: FC = () => {
+  const handleClick = useCallback(() => {
+    signInWithPopup(FirebaseClient.getInstance().Auth, provider);
+  }, []);
+
   return (
     <Button
       leftIcon={
@@ -16,7 +24,7 @@ const GoogleLoginButton: FC<ButtonProps> = (props) => {
         />
       }
       colorScheme="blue"
-      {...props}
+      onClick={handleClick}
     >
       Google로 로그인하기
     </Button>

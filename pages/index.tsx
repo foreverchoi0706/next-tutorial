@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         </Flex>
       </Box>
       <Center mt="20">
-        <GoogleLoginButton onClick={() => alert(1)} />
+        <GoogleLoginButton />
       </Center>
     </Layout>
   );
