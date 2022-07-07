@@ -1,4 +1,10 @@
 export declare global {
+  interface InAuthUserContext {
+    authUser: InAuthUser | null;
+    loading: boolean;
+    signInWithGoogle: () => void;
+    signOut: () => void;
+  }
   interface IConfig {
     credential: {
       privateKey: string;

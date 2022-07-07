@@ -1,3 +1,4 @@
+import { memo } from "react";
 import type { NextPage } from "next";
 import { Box, Center, Flex, Heading } from "@chakra-ui/react";
 import Layout from "components/Layout";
@@ -19,4 +20,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default memo(Home);

@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import FirebaseAdmin from "@/pages/models/firebase_admin";
+import FirebaseAdmin from "@/models/firebase_admin";
 
 type Data = {
   name: string;
